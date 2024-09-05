@@ -1,0 +1,96 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: #ff6525;
+    background-color: #ecf0f3;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    background-color: #ecf0f3;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #fff,
+                5px 5px 12px rgb(0,0,0.14);
+   display: grid;             
+grid-template-columns: repeat(4,70px);
+}
+input{
+    grid-column: span 4;
+    width: 260px;
+    height: 70px;
+    background-color: #ecf0f3;
+    border: none;
+    box-shadow: inset -5px -5px 12px #fff,
+               inset 5px 5px 12px rgb(0,0,0.14);
+                border-radius: 30px;
+                outline: none;
+                font-size: 50px;
+                text-align: end;
+                margin: 40px auto;
+                padding: 10px;
+            }
+              input::placeholder{
+                color: #ff6525;
+            }
+            button{
+                width: 48px;
+                height: 48px;
+                box-shadow: -5px -5px 12px #fff,
+                 5px 5px 12px rgb(0,0,0.14);
+                 border-radius:50%;
+                 border: none;
+                 margin: 8px auto;
+            }
+.equal{
+    width: 115px;
+    border-radius: 40px;
+    margin: 8px 12px;
+
+} 
+button:hover{
+    background-color: rgba(22, 3, 4, 4);
+}
+h1{
+    text-align: center;
+    position:absolute;
+    top:10px;
+    animation: color 1.5s ease-in infinite;
+}
+
+@media (max-width:450px) {
+    h1{
+        font-size: 5vw;
+    }
+}
+
+@keyframes color {
+    0%{
+        text-align: center;
+        position:absolute;
+        top:10px;
+    }50%{
+        text-align: center;
+        position:absolute;
+        top:10px;
+        color: blue;
+    }70%{
+        text-align: center;
+        position:absolute;
+        top:10px;
+        color:red;
+    }100%{
+        text-align: center;
+        position:absolute;
+        top:10px;
+        color:green;
+        font-size: 6vw;
+    }
+}
